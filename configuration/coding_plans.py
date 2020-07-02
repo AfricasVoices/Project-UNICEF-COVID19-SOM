@@ -143,7 +143,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="recently_displaced_raw",
                    time_field="recently_displaced_time",
-                   coda_filename="UNICEF_COVID19_SOM_displaced.json",
+                   coda_filename="UNICEF_COVID19_SOM_recently_displaced.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
