@@ -103,7 +103,7 @@ def get_demog_coding_plans(pipeline_name):
     return [
         CodingPlan(raw_field="gender_raw",
                    time_field="gender_time",
-                   coda_filename="IMAQAL_gender.json",
+                   coda_filename="UNICEF_COVID19_SOM_gender.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -119,7 +119,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="age_raw",
                    time_field="age_time",
-                   coda_filename="IMAQAL_age.json",
+                   coda_filename="UNICEF_COVID19_SOM_age.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -143,7 +143,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="recently_displaced_raw",
                    time_field="recently_displaced_time",
-                   coda_filename="IMAQAL_recently_displaced.json",
+                   coda_filename="UNICEF_COVID19_SOM_displaced.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -159,7 +159,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="household_language_raw",
                    time_field="household_language_time",
-                   coda_filename="IMAQAL_household_language.json",
+                   coda_filename="UNICEF_COVID19_SOM_household_language.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
@@ -174,7 +174,7 @@ def get_demog_coding_plans(pipeline_name):
 
         CodingPlan(raw_field="location_raw",
                    time_field="location_time",
-                   coda_filename="IMAQAL_location.json",
+                   coda_filename="UNICEF_COVID19_SOM_location.json",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
