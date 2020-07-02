@@ -1,0 +1,124 @@
+{
+    "SchemeID": "Scheme-fffee09d89",
+    "Name": "WS - Correct Dataset",
+    "Version": "0.0.0.2",
+    "Codes": [
+        {
+            "CodeID": "code-4ad83e76",
+            "CodeType": "Normal",
+            "DisplayText": "age",
+            "StringValue": "age",
+            "NumericValue": 1,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "age"
+            ]
+        },
+        {
+            "CodeID": "code-8d277d32",
+            "CodeType": "Normal",
+            "DisplayText": "gender",
+            "StringValue": "gender",
+            "NumericValue": 2,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "gender"
+            ]
+        },
+        {
+            "CodeID": "code-95cc3dae",
+            "CodeType": "Normal",
+            "DisplayText": "district",
+            "StringValue": "district",
+            "NumericValue": 3,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "location"
+            ]
+        },
+        {
+            "CodeID": "code-d8e083b8",
+            "CodeType": "Normal",
+            "DisplayText": "recently displaced",
+            "StringValue": "recently displaced",
+            "NumericValue": 4,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "recently displaced"
+            ]
+        },
+        {
+            "CodeID": "code-54efe0e1",
+            "CodeType": "Normal",
+            "DisplayText": "household language",
+            "StringValue": "household language",
+            "NumericValue": 5,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "household language"
+            ]
+        },
+        {
+            "CodeID": "code-ddfd675b",
+            "CodeType": "Normal",
+            "DisplayText": "s01e01",
+            "StringValue": "s01e01",
+            "NumericValue": 6,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "s01e01"
+            ]
+        },
+        {
+            "CodeID": "code-b9e69194",
+            "CodeType": "Normal",
+            "DisplayText": "s01e02",
+            "StringValue": "s01e02",
+            "NumericValue": 7,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "s01e02"
+            ]
+        },
+        {
+            "CodeID": "code-e6b55879",
+            "CodeType": "Normal",
+            "DisplayText": "s01e03",
+            "StringValue": "s01e03",
+            "NumericValue": 8,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "s01e03"
+            ]
+        },
+        {
+            "CodeID": "code-834c5b78",
+            "CodeType": "Normal",
+            "DisplayText": "s01e04",
+            "StringValue": "s01e04",
+            "NumericValue": 9,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "s01e04"
+            ]
+        },
+        {
+            "CodeID": "code-NR-5e3eee23",
+            "CodeType": "Control",
+            "ControlCode": "NR",
+            "DisplayText": "NR (not reviewed)",
+            "NumericValue": -40,
+            "StringValue": "NR",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-CE-016c1e22",
+            "CodeType": "Control",
+            "ControlCode": "CE",
+            "DisplayText": "CE (coding error)",
+            "NumericValue": -110,
+            "StringValue": "CE",
+            "VisibleInCoda": false
+        }
+    ]
+}
