@@ -169,7 +169,7 @@ def get_demog_coding_plans(pipeline_name):
                            fold_strategy=FoldStrategies.assert_label_ids_equal
                        )
                    ],
-                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("hh language"),
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("household language"),
                    raw_field_fold_strategy=FoldStrategies.assert_equal),
 
         CodingPlan(raw_field="location_raw",
