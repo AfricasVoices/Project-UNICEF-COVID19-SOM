@@ -1,0 +1,77 @@
+{
+  "PipelineName": "UNICEF_COVID19_SOM",
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "app.rapidpro.io",
+      "TokenFileURL": "gs://avf-credentials/unicef-nutrition-rapid-pro-token.txt",
+      "ContactsFileName": "unicef_covid19_som_contacts",
+      "ActivationFlowNames": [
+        "unicef_covid19_som_s01e01_activation",
+        "unicef_covid19_som_s01e02_activation",
+        "unicef_covid19_som_s01e03_activation",
+        "unicef_covid19_som_s01e04_activation"
+      ],
+      "SurveyFlowNames": [
+        "unicef_covid19_som_demogs"
+      ],
+      "TestContactUUIDs": [
+        "94d0ec19-a9ed-4c01-8171-aa3337d052cf",
+        "cf3bc9ea-7f2a-4676-93ab-4b56727f8b18"
+      ]
+    }
+  ],
+  "PhoneNumberUuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "UNICEF_COVID19_SOM_phone_number_avf_phone_id"
+  },
+  "RapidProKeyRemappings": [
+    {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
+
+    {"RapidProKey": "Rqa_S01E01 (Text) - unicef_covid19_som_s01e01_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E01 (Run ID) - unicef_covid19_som_s01e01_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_S01E01 (Time) - unicef_covid19_som_s01e01_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E02 (Text) - unicef_covid19_som_s01e02_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E02 (Run ID) - unicef_covid19_som_s01e02_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_S01E02 (Time) - unicef_covid19_som_s01e02_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E03 (Text) - unicef_covid19_som_s01e03_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E03 (Run ID) - unicef_covid19_som_s01e03_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_S01E03 (Time) - unicef_covid19_som_s01e03_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Rqa_S01E04 (Text) - unicef_covid19_som_s01e04_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_S01E04 (Run ID) - unicef_covid19_som_s01e04_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_S01E04 (Time) - unicef_covid19_som_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Gender (Text) - unicef_covid19_som_demogs", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Gender (Time) - unicef_covid19_som_demogs", "PipelineKey": "gender_time"},
+
+    {"RapidProKey": "Age (Text) - unicef_covid19_som_demogs", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Age (Time) - unicef_covid19_som_demogs", "PipelineKey": "age_time"},
+
+    {"RapidProKey": "Recently_Displaced (Text) - unicef_covid19_som_demogs", "PipelineKey": "recently_displaced_raw"},
+    {"RapidProKey": "Recently_Displaced (Time) - unicef_covid19_som_demogs", "PipelineKey": "recently_displaced_time"},
+
+    {"RapidProKey": "Household_Language (Text) - unicef_covid19_som_demogs", "PipelineKey": "household_language_raw"},
+    {"RapidProKey": "Household_Language (Time) - unicef_covid19_som_demogs", "PipelineKey": "household_language_time"},
+
+    {"RapidProKey": "District (Text) - unicef_covid19_som_demogs", "PipelineKey": "location_raw"},
+    {"RapidProKey": "District (Time) - unicef_covid19_som_demogs", "PipelineKey": "location_time"}
+
+  ],
+  "ProjectStartDate": "2020-07-03T00:16:30+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": true,
+  "MoveWSMessages": true,
+  "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "analysis_outputs/unicef_covid19_som_production.csv",
+    "MessagesUploadPath": "analysis_outputs/unicef_covid19_som_messages.csv",
+    "IndividualsUploadPath": "analysis_outputs/unicef_covid19_som_individuals.csv",
+    "AutomatedAnalysisDir": "analysis_outputs/automated_analysis"
+  },
+  "MemoryProfileUploadBucket":"gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+    "BucketDirPath": "2020/UNICEF_COVID19_SOM/"
+}
