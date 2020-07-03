@@ -60,16 +60,16 @@
     {"RapidProKey": "District (Time) - unicef_covid19_som_demogs", "PipelineKey": "location_time"}
 
   ],
-  "ProjectStartDate": "2020-07-03T00:16:30+03:00",
+  "ProjectStartDate": "2020-07-05T16:30:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
   "FilterTestMessages": true,
   "MoveWSMessages": true,
   "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-    "ProductionUploadPath": "analysis_outputs/unicef_covid19_som_production.csv",
-    "MessagesUploadPath": "analysis_outputs/unicef_covid19_som_messages.csv",
-    "IndividualsUploadPath": "analysis_outputs/unicef_covid19_som_individuals.csv",
-    "AutomatedAnalysisDir": "analysis_outputs/automated_analysis"
+    "ProductionUploadPath": "unicef_covid19_som_analysis_outputs/unicef_covid19_som_production.csv",
+    "MessagesUploadPath": "unicef_covid19_som_analysis_outputs/unicef_covid19_som_messages.csv",
+    "IndividualsUploadPath": "unicef_covid19_som_analysis_outputs/unicef_covid19_som_individuals.csv",
+    "AutomatedAnalysisDir": "unicef_covid19_som_analysis_outputs/automated_analysis"
   },
   "MemoryProfileUploadBucket":"gs://avf-pipeline-logs-performance-nearline",
   "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
