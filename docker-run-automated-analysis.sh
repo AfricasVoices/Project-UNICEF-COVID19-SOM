@@ -45,7 +45,7 @@ if [[ "$PROFILE_CPU" = true ]]; then
     SYS_PTRACE_CAPABILITY="--cap-add SYS_PTRACE"
 fi
 CMD="pipenv run python -u $PROFILE_CPU_CMD automated_analysis.py \
-    \"$USER\" /credentials/google-cloud-credentials.json /data/pipeline_configuration.json \
+    \"$USER\" /data/pipeline_configuration.json \
     /data/messages-traced-data.jsonl /data/individuals-traced-data.jsonl /data/automated-analysis-outputs
 "
 container="$(docker container create ${SYS_PTRACE_CAPABILITY} -w /app "$IMAGE_NAME" /bin/bash -c "$CMD")"
