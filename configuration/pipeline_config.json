@@ -60,7 +60,7 @@
     {"RapidProKey": "District (Time) - unicef_covid19_som_demogs", "PipelineKey": "location_time"}
 
   ],
-  "ProjectStartDate": "2020-07-05T16:30:00+03:00",
+  "ProjectStartDate": "2020-07-05T00:00:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
   "FilterTestMessages": true,
   "MoveWSMessages": true,
