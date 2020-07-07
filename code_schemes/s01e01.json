@@ -154,6 +154,70 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-65d97b2c",
+        "CodeType": "Normal",
+        "DisplayText": "maintain good hygiene",
+        "NumericValue": 16,
+        "StringValue": "maintain_good_hygiene",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-c0d59325",
+        "CodeType": "Normal",
+        "DisplayText": "trust in religion",
+        "NumericValue": 17,
+        "StringValue": "trust_in_religion",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-d551ecb2",
+        "CodeType": "Normal",
+        "DisplayText": "community sensitization",
+        "NumericValue": 18,
+        "StringValue": "community_sensitization",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-477f8b4c",
+        "CodeType": "Normal",
+        "DisplayText": "follow authorities' advice",
+        "NumericValue": 19,
+        "StringValue": "follow_authorities_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-be269cf8",
+        "CodeType": "Normal",
+        "DisplayText": "it didn't affect us",
+        "NumericValue": 20,
+        "StringValue": "it_didnt_affect_us",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b89e0582",
+        "CodeType": "Normal",
+        "DisplayText": "nothing",
+        "NumericValue": 21,
+        "StringValue": "nothing",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4b3dc982",
+        "CodeType": "Normal",
+        "DisplayText": "stay at home",
+        "NumericValue": 22,
+        "StringValue": "stay_at_home",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-2286ea01",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 23,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
