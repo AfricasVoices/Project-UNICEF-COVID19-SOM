@@ -70,6 +70,17 @@
       ]
     },
     {
+      "CodeID": "code-64b64595",
+      "CodeType": "Normal",
+      "DisplayText": "kenyan telephone",
+      "NumericValue": 7,
+      "StringValue": "kenyan_telephone",
+      "VisibleInCoda": true,
+      "MatchValues":  [
+        "kenyan telephone"
+      ]
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
