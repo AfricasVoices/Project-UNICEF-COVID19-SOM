@@ -74,7 +74,7 @@
       "CodeType": "Normal",
       "DisplayText": "kenyan telephone",
       "NumericValue": 7,
-      "StringValue": "kenyan telephone",
+      "StringValue": "kenyan_telephone",
       "VisibleInCoda": true,
       "MatchValues":  [
         "kenyan telephone"
