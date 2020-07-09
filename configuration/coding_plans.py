@@ -104,15 +104,15 @@ def get_rqa_coding_plans(pipeline_name):
                    icr_filename="csap_kalkaal_consent.csv",
                    coding_configurations=[
                        CodingConfiguration(
-                           coding_mode=CodingModes.SINGLE,
+                           coding_mode=CodingModes.MULTIPLE,
                            code_scheme=CodeSchemes.CSAP_KALKAAL_CONSENT,
                            coded_field="csap_kalkaal_consent_coded",
                            analysis_file_key="csap_kalkaal_consent",
-                           fold_strategy=FoldStrategies.assert_label_ids_equal
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.CSAP_KALKAAL_CONSENT, x, y)
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("csap kalkaal consent"),
-                   raw_field_fold_strategy=FoldStrategies.assert_equal),
+                   raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 
 
