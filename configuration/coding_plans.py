@@ -101,6 +101,7 @@ def get_rqa_coding_plans(pipeline_name):
                    time_field="sent_on",
                    run_id_field="csap_kalkaal_consent_run_id",
                    coda_filename="UNICEF_COVID19_SOM_csap_kalkaal_consent.json",
+                   icr_filename="csap_kalkaal_consent.csv",
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.SINGLE,
