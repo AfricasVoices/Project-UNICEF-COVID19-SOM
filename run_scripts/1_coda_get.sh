@@ -30,6 +30,7 @@ DATASETS=(
     "UNICEF_COVID19_SOM_gender"
     "UNICEF_COVID19_SOM_recently_displaced"
     "UNICEF_COVID19_SOM_household_language"
+    "UNICEF_COVID19_SOM_csap_kalkaal_consent"
 )
 for DATASET in ${DATASETS[@]}
 do

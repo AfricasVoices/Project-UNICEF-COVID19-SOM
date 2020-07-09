@@ -96,6 +96,22 @@ def get_rqa_coding_plans(pipeline_name):
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("s01e04"),
                    raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="csap_kalkaal_consent_raw",
+                   time_field="sent_on",
+                   run_id_field="csap_kalkaal_consent_run_id",
+                   coda_filename="UNICEF_COVID19_SOM_csap_kalkaal_consent.json",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.SINGLE,
+                           code_scheme=CodeSchemes.CSAP_KALKAAL_CONSENT,
+                           coded_field="csap_kalkaal_consent_coded",
+                           analysis_file_key="csap_kalkaal_consent",
+                           fold_strategy=FoldStrategies.assert_label_ids_equal
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("csap kalkaal consent"),
+                   raw_field_fold_strategy=FoldStrategies.assert_equal),
     ]
 
 

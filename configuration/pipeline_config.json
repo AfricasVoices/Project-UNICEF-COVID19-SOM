@@ -10,7 +10,8 @@
         "unicef_covid19_som_s01e01_activation",
         "unicef_covid19_som_s01e02_activation",
         "unicef_covid19_som_s01e03_activation",
-        "unicef_covid19_som_s01e04_activation"
+        "unicef_covid19_som_s01e04_activation",
+        "csap_kalkaal_consent_flow"
       ],
       "SurveyFlowNames": [
         "unicef_covid19_som_demogs"
@@ -43,6 +44,10 @@
     {"RapidProKey": "Rqa_S01E04 (Text) - unicef_covid19_som_s01e04_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
     {"RapidProKey": "Rqa_S01E04 (Run ID) - unicef_covid19_som_s01e04_activation", "PipelineKey": "rqa_s01e04_run_id"},
     {"RapidProKey": "Rqa_S01E04 (Time) - unicef_covid19_som_s01e04_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Csap_Kalkaal_Consent (Text) - csap_kalkaal_consent_flow", "PipelineKey": "csap_kalkaal_consent_raw","IsActivationMessage": true},
+    {"RapidProKey": "Csap_Kalkaal_Consent (Run ID) - csap_kalkaal_consent_flow", "PipelineKey": "csap_kalkaal_consent_run_id"},
+    {"RapidProKey": "Csap_Kalkaal_Consent (Time) - csap_kalkaal_consent_flow", "PipelineKey": "sent_on"},
 
     {"RapidProKey": "Gender (Text) - unicef_covid19_som_demogs", "PipelineKey": "gender_raw"},
     {"RapidProKey": "Gender (Time) - unicef_covid19_som_demogs", "PipelineKey": "gender_time"},
