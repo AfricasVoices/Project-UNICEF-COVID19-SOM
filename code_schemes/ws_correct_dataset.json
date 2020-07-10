@@ -103,6 +103,17 @@
             ]
         },
         {
+            "CodeID": "code-6da2afee",
+            "CodeType": "Normal",
+            "DisplayText": "csap kalkaal consent",
+            "StringValue": "csap_kalkaal_consent",
+            "NumericValue": 10,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "csap kalkaal consent"
+            ]
+        },
+        {
             "CodeID": "code-NR-5e3eee23",
             "CodeType": "Control",
             "ControlCode": "NR",

@@ -29,3 +29,5 @@ class CodeSchemes(object):
     SOMALIA_ZONE = _open_scheme("somalia_zone.json")
 
     WS_CORRECT_DATASET_SCHEME = _open_scheme("ws_correct_dataset.json")
+
+    CSAP_KALKAAL_CONSENT = _open_scheme("csap_kalkaal_consent.json")
