@@ -23,13 +23,13 @@ DATASETS=(
     "UNICEF_COVID19_SOM_s01e02"
     "UNICEF_COVID19_SOM_s01e03"
     "UNICEF_COVID19_SOM_s01e04"
+    "UNICEF_COVID19_SOM_csap_kalkaal_consent"
 
     "UNICEF_COVID19_SOM_location"
     "UNICEF_COVID19_SOM_age"
     "UNICEF_COVID19_SOM_gender"
     "UNICEF_COVID19_SOM_recently_displaced"
     "UNICEF_COVID19_SOM_household_language"
-    "UNICEF_COVID19_SOM_csap_kalkaal_consent"
 )
 for DATASET in ${DATASETS[@]}
 do
