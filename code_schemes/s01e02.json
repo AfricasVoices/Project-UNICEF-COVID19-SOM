@@ -196,9 +196,9 @@
       {
         "CodeID": "code-4547f4b3",
         "CodeType": "Normal",
-        "DisplayText": "supporting/helping the poor and displaced",
+        "DisplayText": "supporting the poor and displaced",
         "NumericValue": 21,
-        "StringValue": "supporting_helping_the_poor_and_displaced",
+        "StringValue": "supporting_the_poor_and_displaced",
         "VisibleInCoda": true
       },
       {
