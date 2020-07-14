@@ -204,9 +204,9 @@
       {
         "CodeID": "code-cbf389a9",
         "CodeType": "Normal",
-        "DisplayText": "other",
+        "DisplayText": "other theme",
         "NumericValue": 22,
-        "StringValue": "other",
+        "StringValue": "other_theme",
         "VisibleInCoda": true
       },
       {
