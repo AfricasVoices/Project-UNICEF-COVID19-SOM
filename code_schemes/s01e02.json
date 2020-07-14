@@ -153,6 +153,62 @@
         "StringValue": "call_for_right_practice",
         "VisibleInCoda": true
       },
+       {
+        "CodeID": "code-4d622ed0",
+        "CodeType": "Normal",
+        "DisplayText": "educate the community",
+        "NumericValue": 16,
+        "StringValue": "educate_the_community",
+        "VisibleInCoda": true
+      },
+       {
+        "CodeID": "code-8bb1a623",
+        "CodeType": "Normal",
+        "DisplayText": "practice good hygiene",
+        "NumericValue": 17,
+        "StringValue": "practice_good_hygiene",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-6e03f0d2",
+        "CodeType": "Normal",
+        "DisplayText": "ensure social distancing",
+        "NumericValue": 18,
+        "StringValue": "ensure_social_distancing",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-c9711508",
+        "CodeType": "Normal",
+        "DisplayText": "follow authorities' advice",
+        "NumericValue": 19,
+        "StringValue": "follow_authorities_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b1cbcbcd",
+        "CodeType": "Normal",
+        "DisplayText": "trust in religion",
+        "NumericValue": 20,
+        "StringValue": "trust_in_religion",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4547f4b3",
+        "CodeType": "Normal",
+        "DisplayText": "supporting the poor and displaced",
+        "NumericValue": 21,
+        "StringValue": "supporting_the_poor_and_displaced",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-cbf389a9",
+        "CodeType": "Normal",
+        "DisplayText": "other",
+        "NumericValue": 22,
+        "StringValue": "other",
+        "VisibleInCoda": true
+      },
       {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
