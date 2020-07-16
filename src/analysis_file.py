@@ -1,4 +1,5 @@
 from collections import OrderedDict
+import sys
 
 from core_data_modules.cleaners import Codes
 from core_data_modules.traced_data import Metadata
@@ -51,7 +52,7 @@ class AnalysisFile(object):
     def generate(cls, user, data, csv_by_message_output_path, csv_by_individual_output_path):
         # Serializer is currently overflowing
         # TODO: Investigate/address the cause of this.
-        # sys.setrecursionlimit(15000)
+        sys.setrecursionlimit(15000)
 
         # Set consent withdrawn based on presence of data coded as "stop"
         consent_withdrawn_key = "consent_withdrawn"
