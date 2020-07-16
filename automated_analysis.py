@@ -298,17 +298,17 @@ if __name__ == "__main__":
                 themes["Total Relevant Participants"]["Total Participants"] += 1
                 update_survey_counts(themes["Total Relevant Participants"], td)
 
-            set_survey_percentages(themes["Total Relevant Participants"], themes["Total Relevant Participants"])
+        set_survey_percentages(themes["Total Relevant Participants"], themes["Total Relevant Participants"])
 
-            for cc in episode_plan.coding_configurations:
-                assert cc.coding_mode == CodingModes.MULTIPLE, "Other CodingModes not (yet) supported"
+        for cc in episode_plan.coding_configurations:
+            assert cc.coding_mode == CodingModes.MULTIPLE, "Other CodingModes not (yet) supported"
 
-                for code in cc.code_scheme.codes:
-                    if code.code_type != CodeTypes.NORMAL:
-                        continue
+            for code in cc.code_scheme.codes:
+                if code.code_type != CodeTypes.NORMAL:
+                    continue
 
-                    theme = themes[f"{cc.analysis_file_key}_{code.string_value}"]
-                    set_survey_percentages(theme, themes["Total Relevant Participants"])
+                theme = themes[f"{cc.analysis_file_key}_{code.string_value}"]
+                set_survey_percentages(theme, themes["Total Relevant Participants"])
 
     with open(f"{automated_analysis_output_dir}/theme_distributions.csv", "w") as f:
         headers = ["Question", "Variable"] + list(make_survey_counts_dict().keys())
