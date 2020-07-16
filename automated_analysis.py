@@ -2,6 +2,7 @@ import argparse
 import csv
 import random
 from collections import OrderedDict
+import sys
 
 import geopandas
 import matplotlib.pyplot as plt
@@ -72,6 +73,7 @@ if __name__ == "__main__":
         individuals = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
     log.info(f"Loaded {len(individuals)} individuals")
 
+    sys.setrecursionlimit(15000)
     # Compute the number of messages, individuals, and relevant messages per episode and overall.
     log.info("Computing the per-episode and per-season engagement counts...")
     engagement_counts = OrderedDict()  # of episode name to counts
