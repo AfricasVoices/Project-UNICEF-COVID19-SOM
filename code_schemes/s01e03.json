@@ -154,6 +154,78 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-125f87c4",
+        "CodeType": "Normal",
+        "DisplayText": "creating awareness",
+        "NumericValue": 16,
+        "StringValue": "creating_awareness",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-e171b6bf",
+        "CodeType": "Normal",
+        "DisplayText": "supporting the vulnerable",
+        "NumericValue": 17,
+        "StringValue": "supporting_the_vulnerable",
+        "VisibleInCoda": true
+      },
+       {
+        "CodeID": "code-08160b6d",
+        "CodeType": "Normal",
+        "DisplayText": "maintain good hygiene",
+        "NumericValue": 18,
+        "StringValue": "maintain_good_hygiene",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4d81a5f8",
+        "CodeType": "Normal",
+        "DisplayText": "trust in religion",
+        "NumericValue": 19,
+        "StringValue": "trust_in_religion",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-6c5805a5",
+        "CodeType": "Normal",
+        "DisplayText": "ensure social distancing",
+        "NumericValue": 20,
+        "StringValue": "ensure_social_distancing",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-115b1257",
+        "CodeType": "Normal",
+        "DisplayText": "set up special committee",
+        "NumericValue": 21,
+        "StringValue": "set_up_special_committee",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-d81b67cd",
+        "CodeType": "Normal",
+        "DisplayText": "ensure they follow authorities' advice",
+        "NumericValue": 22,
+        "StringValue": "ensure_they_follow_authorities_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-286cd184",
+        "CodeType": "Normal",
+        "DisplayText": "provide healthcare services",
+        "NumericValue": 23,
+        "StringValue": "provide_healthcare_services",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-abaca421",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 24,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
