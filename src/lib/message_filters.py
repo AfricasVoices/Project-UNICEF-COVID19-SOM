@@ -1,5 +1,6 @@
 from core_data_modules.logging import Logger
 from dateutil.parser import isoparse
+from .pipeline_configuration import PipelineConfiguration
 
 log = Logger(__name__)
 
@@ -123,4 +124,60 @@ class MessageFilters(object):
         filtered = [td for td in messages if not noise_fn(td.get(message_key))]
         log.info(f"Filtered out messages identified as noise. "
                  f"Returning {len(filtered)}/{len(messages)} messages.")
+        return filtered
+
+    @staticmethod
+    def filter_katikati_sms_survey_messages(messages, time_keys):
+        """
+        Filters out a list of messages received during Katikati sms survey(s) broadcast period.
+
+        :param messages: List of message objects to filter.
+        :type messages: list of TracedData
+        :param time_keys: Keys in each TracedData object that contain the time the message was sent.
+                          Each TracedData should have exactly one match for each key.
+                          The values must be strings in ISO 8601 format.
+        :type time_keys: set of str
+        :return: Filtered list.
+        :rtype: list of TracedData
+        """
+        # De-duplicate time_keys
+        time_keys = set(time_keys)
+
+        log.debug(f"Filtering out messages received during katikati sms survey broadcast period"
+                  f"for time keys {time_keys}...")
+
+        # Validate the input data to ensure that each message object only contains one of the time_keys.
+        for td in messages:
+            matching_time_keys = 0
+            for time_key in time_keys:
+                if time_key in td:
+                    matching_time_keys += 1
+            assert matching_time_keys == 1, matching_time_keys
+
+        # Not all episodes have Katikati Sms Survey check those that have and filter the messages
+        katikati_survey_messages = []
+        for episode_plan in PipelineConfiguration.RQA_CODING_PLANS:
+            if episode_plan.katikati_survey_time_ranges is None:
+                continue
+
+            episode_katikati_survey_messages = 0
+            for td in messages:
+                if episode_plan.raw_field in td:
+                    for time_key in time_keys:
+                        for time_range in episode_plan.katikati_survey_time_ranges:
+                            if time_key in td and isoparse(time_range[0]) <= isoparse(td[time_key]) \
+                                    < isoparse(time_range[1]):
+                                katikati_survey_messages.append(td)
+                                episode_katikati_survey_messages += 1
+
+            log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period. "
+                      f"{episode_plan.katikati_survey_time_ranges} in {episode_plan.raw_field}")
+
+        filtered = [td for td in messages if td not in katikati_survey_messages]
+
+        assert len(filtered) + len(katikati_survey_messages) == len(messages)
+
+        log.info(f"Filtered out {len(katikati_survey_messages)} messages recieved during katikati sms survey broadcast period. "
+                 f"Returning {len(filtered)}/{len(messages)} messages.")
+
         return filtered

@@ -69,6 +69,8 @@ class AutoCode(object):
         time_keys = {plan.time_field for plan in PipelineConfiguration.RQA_CODING_PLANS}
         data = MessageFilters.filter_time_range(data, time_keys, project_start_date, project_end_date)
 
+        data = MessageFilters.filter_katikati_sms_survey_messages(data, time_keys)
+
         return data
 
     @classmethod
