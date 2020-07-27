@@ -154,6 +154,54 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-9c4a126f",
+        "CodeType": "Normal",
+        "DisplayText": "lack of awareness",
+        "NumericValue": 16,
+        "StringValue": "lack_of_awareness",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4a54b87e",
+        "CodeType": "Normal",
+        "DisplayText": "denial and misinfo",
+        "NumericValue": 17,
+        "StringValue": "denial_and_misinfo",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b24941f0",
+        "CodeType": "Normal",
+        "DisplayText": "poor economy",
+        "NumericValue": 18,
+        "StringValue": "poor_economy",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-60ee37d2",
+        "CodeType": "Normal",
+        "DisplayText": "lack of protective equipment",
+        "NumericValue": 19,
+        "StringValue": "lack_of_protective_equipment",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-f5dcd6d2",
+        "CodeType": "Normal",
+        "DisplayText": "nothing",
+        "NumericValue": 20,
+        "StringValue": "nothing",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-cd9ff67f",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 21,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",

@@ -153,6 +153,62 @@
         "StringValue": "call_for_right_practice",
         "VisibleInCoda": true
       },
+       {
+        "CodeID": "code-3ffd028c",
+        "CodeType": "Normal",
+        "DisplayText": "yes, inadequate sanitation and PPEs",
+        "NumericValue": 16,
+        "StringValue": "yes_inadequate_sanitation_and_ppes",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-963681cf",
+        "CodeType": "Normal",
+        "DisplayText": "yes, lack of acceptance",
+        "NumericValue": 17,
+        "StringValue": "yes_lack_of_acceptance",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-2bc30493",
+        "CodeType": "Normal",
+        "DisplayText": "yes, livelihood/social community",
+        "NumericValue": 18,
+        "StringValue": "yes_livelihood_social_community",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-4864a9e7",
+        "CodeType": "Normal",
+        "DisplayText": "yes, other",
+        "NumericValue": 19,
+        "StringValue": "yes_other",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-51bf1bc1",
+        "CodeType": "Normal",
+        "DisplayText": "no, nothing",
+        "NumericValue": 20,
+        "StringValue": "no_nothing",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-5abf9a85",
+        "CodeType": "Normal",
+        "DisplayText": "no, follow health advice",
+        "NumericValue": 21,
+        "StringValue": "no_follow_health_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-95de702e",
+        "CodeType": "Normal",
+        "DisplayText": "no, other",
+        "NumericValue": 22,
+        "StringValue": "no_other",
+        "VisibleInCoda": true
+      },
       {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
