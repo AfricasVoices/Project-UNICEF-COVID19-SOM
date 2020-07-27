@@ -170,14 +170,14 @@ class MessageFilters(object):
                                 katikati_survey_messages.append(td)
                                 episode_katikati_survey_messages += 1
 
-            log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period"
+            log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period. "
                       f"{episode_plan.katikati_survey_time_ranges} in {episode_plan.raw_field}")
 
         filtered = [td for td in messages if td not in katikati_survey_messages]
 
         assert len(filtered) + len(katikati_survey_messages) == len(messages)
 
-        log.info(f"Filtered out {len(katikati_survey_messages)} messages recieved during katikati sms survey broadcast period"
+        log.info(f"Filtered out {len(katikati_survey_messages)} messages recieved during katikati sms survey broadcast period. "
                  f"Returning {len(filtered)}/{len(messages)} messages.")
 
         return filtered
