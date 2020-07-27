@@ -68,8 +68,7 @@ def get_rqa_coding_plans(pipeline_name):
                    run_id_field="rqa_s01e03_run_id",
                    coda_filename="UNICEF_COVID19_SOM_s01e03.json",
                    icr_filename="rqa_s01e03.csv",
-                   katikati_survey_start_time="2020-07-24T14:00:00+03:00",
-                   katikati_survey_end_time="2020-07-26T00:00:00+03:00",
+                   katikati_survey_time_ranges=[("2020-07-24T14:00:00+03:00","2020-07-26T00:00:00+03:00")],
                    coding_configurations=[
                        CodingConfiguration(
                            coding_mode=CodingModes.MULTIPLE,
