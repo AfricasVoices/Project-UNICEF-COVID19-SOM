@@ -161,7 +161,7 @@ class MessageFilters(object):
                             katikati_survey_messages.append(td)
                             episode_katikati_survey_messages += 1
 
-            log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period"
+            log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period. "
                       f"{episode_plan.katikati_survey_start_time} in {episode_plan.raw_field}")
 
         filtered = [td for td in messages if td not in katikati_survey_messages]
