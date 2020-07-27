@@ -165,7 +165,7 @@ class MessageFilters(object):
                       f"{episode_plan.katikati_survey_start_time} in {episode_plan.raw_field}")
 
         filtered = [td for td in messages if td not in katikati_survey_messages]
-        log.info(f"Filtered out {len(katikati_survey_messages)} messages recieved during katikati sms survey broadcast period"
+        log.info(f"Filtered out {len(katikati_survey_messages)} messages recieved during katikati sms survey broadcast period. "
                  f"Returning {len(filtered)}/{len(messages)} messages.")
 
         return filtered
