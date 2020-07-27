@@ -147,7 +147,7 @@ class MessageFilters(object):
                   f"for time keys {time_keys}...")
 
         # Not all episodes have Katikati Sms Survey check those that have and filter the messages
-        katikati_survey_messages = []
+        katikati_survey_messages = set()
         for episode_plan in PipelineConfiguration.RQA_CODING_PLANS:
             if episode_plan.katikati_survey_start_time is None:
                 continue
@@ -158,7 +158,7 @@ class MessageFilters(object):
                     for time_key in time_keys:
                         if time_key in td and isoparse(episode_plan.katikati_survey_start_time) <= isoparse(td[time_key]) \
                                 < isoparse(episode_plan.katikati_survey_end_time):
-                            katikati_survey_messages.append(td)
+                            katikati_survey_messages.add(td)
                             episode_katikati_survey_messages += 1
 
             log.debug(f"Found {episode_katikati_survey_messages} messages received during katikati sms survey broadcast period"
