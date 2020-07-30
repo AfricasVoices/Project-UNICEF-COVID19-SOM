@@ -154,6 +154,46 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-b0fee443",
+        "CodeType": "Normal",
+        "DisplayText": "create awareness",
+        "NumericValue": 16,
+        "StringValue": "create awareness",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-121fbda1",
+        "CodeType": "Normal",
+        "DisplayText": "practice good hygiene",
+        "NumericValue": 17,
+        "StringValue": "practice_good_hygiene",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-2cbe499c",
+        "CodeType": "Normal",
+        "DisplayText": "follow authorities advice",
+        "NumericValue": 18,
+        "StringValue": "follow_authorities_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-00e891ad",
+        "CodeType": "Normal",
+        "DisplayText": "trust in religion",
+        "NumericValue": 19,
+        "StringValue": "trust_in_religion",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-62bbd75f",
+        "CodeType": "Normal",
+        "DisplayText": "other theme",
+        "NumericValue": 20,
+        "StringValue": "other_theme",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",

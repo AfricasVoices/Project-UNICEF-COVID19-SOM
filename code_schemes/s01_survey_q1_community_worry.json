@@ -154,6 +154,86 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-8edad295",
+        "CodeType": "Normal",
+        "DisplayText": "yes, lack of awareness",
+        "NumericValue": 16,
+        "StringValue": "yes_lack_of_awareness",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-f3ef5e1e",
+        "CodeType": "Normal",
+        "DisplayText": "yes, lack of right practise",
+        "NumericValue": 17,
+        "StringValue": "yes_lack_of_right_practise",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b7143e1e",
+        "CodeType": "Normal",
+        "DisplayText": "yes, lack of resources",
+        "NumericValue": 18,
+        "StringValue": "yes_lack_of_resources",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-dfb2bec1",
+        "CodeType": "Normal",
+        "DisplayText": "yes, not following authorities' advice",
+        "NumericValue": 19,
+        "StringValue": "yes_not_following_authorities_advice",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b6e7f81b",
+        "CodeType": "Normal",
+        "DisplayText": "yes, fear of contracting the virus",
+        "NumericValue": 20,
+        "StringValue": "yes_fear_of_contracting_the_virus",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-a013a79d",
+        "CodeType": "Normal",
+        "DisplayText": "yes, lack of medical services",
+        "NumericValue": 21,
+        "StringValue": "yes_lack_of_medical_services",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-380e731b",
+        "CodeType": "Normal",
+        "DisplayText": "yes, other",
+        "NumericValue": 22,
+        "StringValue": "yes_other",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-43c8d0f7",
+        "CodeType": "Normal",
+        "DisplayText": "no, lack of awareness",
+        "NumericValue": 23,
+        "StringValue": "no_lack of awareness",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-439c25c6",
+        "CodeType": "Normal",
+        "DisplayText": "no, trust in religion",
+        "NumericValue": 24,
+        "StringValue": "no_trust_in_religion",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-0ee93980",
+        "CodeType": "Normal",
+        "DisplayText": "no, other",
+        "NumericValue": 25,
+        "StringValue": "no_other",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
