@@ -154,6 +154,54 @@
         "VisibleInCoda": true
       },
       {
+        "CodeID": "code-a4048b1b",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - the virus discriminates",
+        "NumericValue": 16,
+        "StringValue": "rumour_stigma_misinfo_the_virus_discriminates",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-159ac7d7",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - treatment/cure/remedy",
+        "NumericValue": 17,
+        "StringValue": "rumour_stigma_misinfo_treatment_cure_remedy",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-b971e7b9",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - virus description",
+        "NumericValue": 18,
+        "StringValue": "rumour_stigma_misinfo_virus_description",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-7e41189a",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - negative stigma/anger",
+        "NumericValue": 19,
+        "StringValue": "rumour_stigma_misinfo_negative_stigma_anger",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-3693934b",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - origin",
+        "NumericValue": 20,
+        "StringValue": "rumour_stigma_misinfo_origin",
+        "VisibleInCoda": true
+      },
+      {
+        "CodeID": "code-59753e17",
+        "CodeType": "Normal",
+        "DisplayText": "rumour/stigma/misinfo - misinfo on status",
+        "NumericValue": 21,
+        "StringValue": "rumour_stigma_misinfo_misinfo_on_status",
+        "VisibleInCoda": true
+      },
+      {
         "CodeID": "code-NA-f93d3eb7",
         "CodeType": "Control",
         "ControlCode": "NA",
