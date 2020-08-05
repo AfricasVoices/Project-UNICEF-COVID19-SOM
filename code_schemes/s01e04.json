@@ -196,9 +196,9 @@
       {
         "CodeID": "code-f9511661",
         "CodeType": "Normal",
-        "DisplayText": "other",
+        "DisplayText": "other theme",
         "NumericValue": 21,
-        "StringValue": "other",
+        "StringValue": "other_theme",
         "VisibleInCoda": true
       },
       {
