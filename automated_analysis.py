@@ -3,6 +3,7 @@ import csv
 import random
 from collections import OrderedDict
 import sys
+import json
 
 import geopandas
 import matplotlib.pyplot as plt
@@ -61,12 +62,13 @@ if __name__ == "__main__":
     Logger.set_project_name(pipeline_configuration.pipeline_name)
     log.debug(f"Pipeline name is {pipeline_configuration.pipeline_name}")
 
+    '''
     # Read the messages dataset
     log.info(f"Loading the messages dataset from {messages_json_input_path}...")
     with open(messages_json_input_path) as f:
         messages = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
     log.info(f"Loaded {len(messages)} messages")
-
+    '''
     # Read the individuals dataset
     log.info(f"Loading the individuals dataset from {individuals_json_input_path}...")
     with open(individuals_json_input_path) as f:
@@ -74,6 +76,33 @@ if __name__ == "__main__":
     log.info(f"Loaded {len(individuals)} individuals")
 
     sys.setrecursionlimit(15000)
+    # Read the individuals dataset
+    log.info(f"Loading the individuals dataset from {individuals_json_input_path}...")
+    with open(individuals_json_input_path) as f:
+        individuals = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
+    log.info(f"Loaded {len(individuals)} individuals")
+
+    sys.setrecursionlimit(15000)
+    demog_map = dict()
+    for ind in individuals:
+        if ind["consent_withdrawn"] == Codes.FALSE:
+
+            uid = ind["uid"]
+            demog_data_for_id = {}
+            for plan in PipelineConfiguration.DEMOG_CODING_PLANS:
+                for cc in plan.coding_configurations:
+                    if cc.analysis_file_key is None:
+                        continue
+                    key = cc.analysis_file_key
+                    demog_data_for_id[key] = cc.code_scheme.get_code_with_code_id(
+                        ind[cc.coded_field]["CodeID"]).string_value
+
+            demog_map[uid] = demog_data_for_id
+
+    with open(f'{automated_analysis_output_dir}/{pipeline_configuration.pipeline_name}_demog_map.json', "w") as f:
+        json.dump(demog_map, f)
+
+    '''
     # Compute the number of messages, individuals, and relevant messages per episode and overall.
     log.info("Computing the per-episode and per-season engagement counts...")
     engagement_counts = OrderedDict()  # of episode name to counts
@@ -665,5 +694,5 @@ if __name__ == "__main__":
         fig.update_layout(title_text=f"{plan.raw_field} by gender (normalised)")
         fig.update_xaxes(tickangle=-60)
         fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_normalised.png", scale=IMG_SCALE_FACTOR)
-
+    '''
     log.info("automated analysis python script complete")

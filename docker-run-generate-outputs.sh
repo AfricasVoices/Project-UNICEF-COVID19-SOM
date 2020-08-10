@@ -58,6 +58,7 @@ fi
 if [[ "$PROFILE_MEMORY" = true ]]; then
     PROFILE_MEMORY_CMD="mprof run -o /data/memory.prof"
 fi
+
 CMD="pipenv run $PROFILE_MEMORY_CMD python -u $PROFILE_CPU_CMD generate_outputs.py \
     \"$USER\" /data/pipeline_configuration.json /data/raw-data /data/prev-coded \
     /data/output-messages.jsonl /data/output-individuals.jsonl /data/output-icr /data/coded \
