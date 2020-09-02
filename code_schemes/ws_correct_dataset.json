@@ -114,6 +114,17 @@
             ]
         },
         {
+            "CodeID": "code-7071102f",
+            "CodeType": "Normal",
+            "DisplayText": "s01 closeout",
+            "StringValue": "s01_closeout",
+            "NumericValue": 11,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "s01 closeout"
+            ]
+        },
+        {
             "CodeID": "code-NR-5e3eee23",
             "CodeType": "Control",
             "ControlCode": "NR",

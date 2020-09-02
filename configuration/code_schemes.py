@@ -31,3 +31,4 @@ class CodeSchemes(object):
     WS_CORRECT_DATASET_SCHEME = _open_scheme("ws_correct_dataset.json")
 
     CSAP_KALKAAL_CONSENT = _open_scheme("csap_kalkaal_consent.json")
+    S01_CLOSEOUT = _open_scheme("s01_closeout.json")
