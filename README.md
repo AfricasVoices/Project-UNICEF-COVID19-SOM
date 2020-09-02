@@ -14,7 +14,7 @@ Development requires the following additional tools:
  - pipenv
  - git
  
-After cloning you need to run `pipenv sync` in the project directory to install all dependencies required by the last step 
+After cloning run `$ pipenv sync` in the project directory to install all dependencies required by the last step 
 `upload log files` which runs in a non-dockerised environment. 
 
 ## Usage
@@ -233,4 +233,3 @@ To annotate the graph with when specific functions were entered and exited, add 
 the functions of interest. There is no need to import anything.
 
 For full details on the memory profiler, see its [documentation page](https://pypi.org/project/memory-profiler/).
-
