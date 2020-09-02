@@ -25,6 +25,7 @@ DATASETS=(
     "UNICEF_COVID19_SOM_s01e03"
     "UNICEF_COVID19_SOM_s01e04"
     "UNICEF_COVID19_SOM_csap_kalkaal_consent"
+    "UNICEF_COVID19_SOM_s01_closeout"
 
     "UNICEF_COVID19_SOM_location"
     "UNICEF_COVID19_SOM_age"

@@ -113,9 +113,26 @@ def get_rqa_coding_plans(pipeline_name):
                        )
                    ],
                    ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("csap kalkaal consent"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="s01_closeout_raw",
+                   time_field="sent_on",
+                   run_id_field="s01_closeout_run_id",
+                   coda_filename="UNICEF_COVID19_SOM_s01_closeout.json",
+                   icr_filename="s01_closeout.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.S01_CLOSEOUT,
+                           coded_field="s01_closeout_coded",
+                           analysis_file_key="s01_closeout",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.S01_CLOSEOUT, x,
+                                                                                    y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_match_value("s01 closeout"),
                    raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
-
 
 def get_demog_coding_plans(pipeline_name):
     return [
