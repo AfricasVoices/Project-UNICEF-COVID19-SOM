@@ -13,15 +13,19 @@ Development requires the following additional tools:
  - Python 3.6
  - pipenv
  - git
+ 
+After cloning you need to run `pipenv sync` in the project directory to install all dependencies required by the last step 
+`upload log files` which runs in a non-dockerised environment. 
 
 ## Usage
-A pipeline run consists of the following five steps, executed in sequence:
+A pipeline run consists of the following steps, executed in sequence:
 1. Download coded data from Coda.
 2. Fetch all the relevant data from Rapid Pro.
 3. Process the raw data to produce the outputs required for coding and then for analysis.
 4. Upload the new data to Coda for manual verification and coding.
 5. Run automated analysis.
 6. Back-up the project data root.
+7. Upload analysis files generated in step 3 and 5 to project google drive directory. 
 7. Upload execution logs/archives to long term storage.
 
 To simplify the configuration and execution of these stages, this project includes a `run_scripts`
@@ -186,7 +190,7 @@ where:
 
 ### 8. Upload logs files
 This stage uploads the archive produced in the backup-data stage and a memory profile log of the generate outputs stage
-to Google Cloud storage.
+to project google drive directory.
 To use, run the following command from the `run_scripts` directory:
 
 ```
