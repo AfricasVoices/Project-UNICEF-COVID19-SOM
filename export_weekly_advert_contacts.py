@@ -63,20 +63,16 @@ if __name__ == "__main__":
         individuals = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
     log.info(f"Loaded {len(individuals)} individuals")
 
-    '''
+
     log.info("Downloading unicef beneficiaries avf-phone-numbers...")
-    unicef_beneficiary_list_file_output_path = f'{data_dir}/Raw Data/unicef_beneficiary_list.csv'
-    with open(unicef_beneficiary_list_file_output_path, "wb") as f:
-        google_cloud_utils.download_blob_to_file(
-            google_cloud_credentials_file_path, pipeline_configuration.unicef_beneficiary_list_url, f)
-    
+    unicef_beneficiary_list_file_output_path = f'{data_dir}/Raw Data/may_2020_unicef_beneficiaries_de_identified.csv'
     beneficiary_list = set()
     with open(unicef_beneficiary_list_file_output_path) as f:
         data = csv.DictReader(f)
         for row in data:
             beneficiary_list.add(row['PhoneNumber'])
     log.info(f'Loaded {len(beneficiary_list)} unicef beneficiaries avf-phone-numbers')
-    '''
+
     advert_uuids = set()
     opt_out_uuids = set()
     for ind in individuals:
@@ -86,7 +82,7 @@ if __name__ == "__main__":
             advert_uuids.add(ind['uid'])
 
     print(f'Number of opted out individuals {len(opt_out_uuids)}')
-    '''
+
     participated_beneficiaries = 0
     for ind in individuals:
         if ind['uid'] in beneficiary_list:
@@ -98,7 +94,7 @@ if __name__ == "__main__":
     for uid in beneficiary_list:
         if uid not in opt_out_uuids:
             advert_uuids.add(uid)
-    '''
+
     # Convert the uuids to phone numbers
     log.info(f'Converting {len(advert_uuids)} uuids to phone numbers...')
     uuids_to_phone_numbers = phone_number_uuid_table.uuid_to_data_batch(list(advert_uuids))
