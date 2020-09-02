@@ -190,7 +190,7 @@ where:
 
 ### 8. Upload log files
 This stage uploads the archive produced in the backup-data stage and a memory profile log of the generate outputs stage
-to project google drive directory.
+to google cloud storage.
 To use, run the following command from the `run_scripts` directory:
 
 ```
