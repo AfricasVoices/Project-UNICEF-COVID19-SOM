@@ -188,7 +188,7 @@ where:
 - `run-id` is a unique identifier for the run being uploaded. This will be included in all of the uploaded file names.
 - `data-root` is an absolute path to the directory in which all pipeline data should be stored.
 
-### 8. Upload logs files
+### 8. Upload log files
 This stage uploads the archive produced in the backup-data stage and a memory profile log of the generate outputs stage
 to project google drive directory.
 To use, run the following command from the `run_scripts` directory:
